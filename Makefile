@@ -7,7 +7,8 @@ help: ## Show this help.
 all: lint vet test build ## Run the tests and build the binary.
 
 build: ## Build the binary.
-	go build -ldflags "-X github.com/netlify/gotrue/cmd.Version=`git rev-parse HEAD`"
+	#go build -ldflags "-X github.com/supabase/gotrue/cmd.Version=`git rev-parse HEAD`"
+	go build
 
 deps: ## Install dependencies.
 	@go get github.com/gobuffalo/pop/v5@v5.3.1
